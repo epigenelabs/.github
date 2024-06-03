@@ -2,7 +2,9 @@
 
 ## Description and Context
 <!-- Describe your changes here -->
+<!-- Link your PR to the corresponding JIRA ticket by adding the identifier of your JIRA ticket in brackets (e.g. [JRA-33]) -->
 <!-- Feel free to add sections if needed (e.g. "Test strategy" or "Compliance") -->
+
 
 ## Types of changes
 <!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
