@@ -1,23 +1,18 @@
 {
-  // global settings
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit",
-    "source.formatDocument": "explicit",
-    "source.lint": "explicit",
-    "source.fixAll.eslint": "explicit"
-  },
-  "editor.formatOnPaste": false,
-
-  // backend settings, require vscode extensions: black, flake8, isort
+// backend settings, require vscode extensions: black, flake8, isort
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit",
+      "source.formatDocument": "explicit",
+      "source.lint": "explicit"
+    },
+    "editor.formatOnPaste": false
   },
-  "isort.args": [
+    "isort.args": [
     "--profile=black"
-  ],
-  "black-formatter.args": [
-    "--line-length=88"
   ],
   "flake8.args": [
     "--max-line-length=88"
