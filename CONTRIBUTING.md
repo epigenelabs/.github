@@ -22,9 +22,9 @@ codebase on the long-term. Beyond documentation, extensive testing is mandatory.
 Writing a clean and understandable `git` history is also critical, and includes
 in particular:
 
-- Naming branch and PR with JIRA ticket name to enable JIRA and Github integration 
+- Naming branch and PR with JIRA ticket name to enable JIRA and Github integration
   * `git checkout -b JRA-123-<branch-name>`
-- writing meaningful commit messages with the Smart Commits syntaxe
+- writing meaningful commit messages with the Smart Commits syntax
   * `git commit -m "JRA-123 <summary of commit>"`
   * commit messages should start with a one-line summary
   * commits should be complete: consider `squash`-ing commits before merging
@@ -32,15 +32,21 @@ in particular:
 - keeping the history linear, by `rebase`-ing before merging branches
 - designing meaningful tests, with intuitive names or proper documentation
 
-Please refer to the [Smart Commits documentation].(https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/) 
+Please refer to the [Smart Commits
+documentation](https://support.atlassian.com/bitbucket-cloud/docs/use-smart-commits/).
 
 ## Set VS CODE configuration
 
-To maintain code quality and ease developers contribution, we provide a minimal vscode settings.
+To maintain code quality and ease developers contribution, we provide a minimal
+vscode settings.
 
 In each new repository, please make sure to include these settings by:
+
 * creating a `.vscode` folder
-* Adding the `settings.json` file to it. The file is accessible in the VSCODE_SETTINGS. 
+* adding the default [ruff
+  configuration](https://github.com/epigenelabs/.github/blob/master/VSCODE_SETTINGS/ruff.toml)
+* adding the [VSCode
+  settings](https://github.com/epigenelabs/.github/blob/master/VSCODE_SETTINGS/settings.json)
 
 
 # A fault confessed is fully redressed
